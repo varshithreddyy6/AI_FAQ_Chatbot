@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AI FAQ Chatbot
 
 An AI-powered chatbot built using:
@@ -35,3 +36,7 @@ http://localhost:3000
 ## Author
 
 Varshith Reddy
+=======
+# AI_FAQ_Chatbot
+AI-powered FAQ chatbot using Node.js, Express, and Gemini API
+>>>>>>> 37c1eb29930749bbe0a6106948ef11ff8234d385
