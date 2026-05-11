@@ -1,0 +1,146 @@
+[
+  {
+    "question": "what is ai",
+    "answer": "Artificial Intelligence enables machines to simulate human intelligence."
+  },
+  {
+    "question": "what is machine learning",
+    "answer": "Machine Learning is a branch of AI that allows systems to learn from data."
+  },
+  {
+    "question": "what is deep learning",
+    "answer": "Deep Learning uses neural networks with many layers to solve complex problems."
+  },
+  {
+    "question": "what is python",
+    "answer": "Python is a popular programming language used in AI, web development, and automation."
+  },
+  {
+    "question": "what is javascript",
+    "answer": "JavaScript is a programming language mainly used for web development."
+  },
+  {
+    "question": "what is html",
+    "answer": "HTML is the standard markup language used to create webpages."
+  },
+  {
+    "question": "what is css",
+    "answer": "CSS is used to style and design webpages."
+  },
+  {
+    "question": "what is node js",
+    "answer": "Node.js allows JavaScript to run on servers."
+  },
+  {
+    "question": "what is react",
+    "answer": "React is a JavaScript library for building user interfaces."
+  },
+  {
+    "question": "what is github",
+    "answer": "GitHub is a platform used to host and manage code repositories."
+  },
+  {
+    "question": "what is api",
+    "answer": "API stands for Application Programming Interface and allows applications to communicate."
+  },
+  {
+    "question": "what is cloud computing",
+    "answer": "Cloud computing delivers computing services over the internet."
+  },
+  {
+    "question": "what is cyber security",
+    "answer": "Cybersecurity protects systems and networks from digital attacks."
+  },
+  {
+    "question": "what is blockchain",
+    "answer": "Blockchain is a decentralized digital ledger technology."
+  },
+  {
+    "question": "what is data science",
+    "answer": "Data Science combines statistics, AI, and programming to analyze data."
+  },
+  {
+    "question": "who is elon musk",
+    "answer": "Elon Musk is the CEO of Tesla and SpaceX."
+  },
+  {
+    "question": "who is bill gates",
+    "answer": "Bill Gates is the co-founder of Microsoft."
+  },
+  {
+    "question": "what is black hole",
+    "answer": "A black hole is a region in space where gravity is extremely strong."
+  },
+  {
+    "question": "what is the internet",
+    "answer": "The internet is a global network connecting millions of computers."
+  },
+  {
+    "question": "what is chatgpt",
+    "answer": "ChatGPT is an AI chatbot developed by OpenAI."
+  },
+  {
+    "question": "hi",
+    "answer": "Hello 👋 How can I help you today?"
+  },
+  {
+    "question": "hello",
+    "answer": "Hello 👋 Nice to meet you."
+  },
+  {
+    "question": "hey",
+    "answer": "Hey 👋 What can I do for you?"
+  },
+  {
+    "question": "what is ai",
+    "answer": "Artificial Intelligence enables machines to simulate human intelligence."
+  },
+  {
+    "question": "what is machine learning",
+    "answer": "Machine Learning is a branch of AI that allows systems to learn from data."
+  },
+  {
+    "question": "what is deep learning",
+    "answer": "Deep Learning uses neural networks with many layers."
+  },
+  {
+    "question": "what is html",
+    "answer": "HTML is the standard markup language used to create webpages."
+  },
+  {
+    "question": "what is css",
+    "answer": "CSS is used to style webpages."
+  },
+  {
+    "question": "what is javascript",
+    "answer": "JavaScript makes webpages interactive."
+  },
+  {
+    "question": "what is node js",
+    "answer": "Node.js allows JavaScript to run on servers."
+  },
+  {
+    "question": "what is github",
+    "answer": "GitHub is a platform used to host and manage code repositories."
+  },
+  {
+    "question": "who created you",
+    "answer": "I was created by Varshith Reddy."
+  },
+  {
+    "question": "tell me a joke",
+    "answer": "Why do programmers prefer dark mode? Because light attracts bugs 😄"
+  },
+  {
+    "question": "what is black hole",
+    "answer": "A black hole is a region in space with extremely strong gravity."
+  },
+  {
+    "question": "who is elon musk",
+    "answer": "Elon Musk is the CEO of Tesla and SpaceX."
+  },
+  {
+    "question": "pooja",
+    "answer": "Pooja is a beautiful name 😊"
+  }
+]
