@@ -1,22 +1,21 @@
-<<<<<<< HEAD
 # AI FAQ Chatbot
 
 An AI-powered chatbot built using:
 
-- HTML
-- CSS
-- JavaScript
-- Node.js
-- Express.js
-- Gemini AI API
+* HTML
+* CSS
+* JavaScript
+* Node.js
+* Express.js
+* Gemini AI API
 
 ## Features
 
-- Modern chatbot UI
-- FAQ-based responses
-- AI-generated responses
-- Chat memory
-- Responsive design
+* Modern chatbot UI
+* FAQ-based responses
+* AI-generated responses
+* Chat memory
+* Responsive design
 
 ## Installation
 
@@ -31,13 +30,16 @@ npm start
 ```
 
 Open:
-http://localhost:3000
-Render Link:
-https://ai-faq-chatbot-tpkc.onrender.com/
+[http://localhost:3000](http://localhost:3000)
+
+## Live Demo
+
+[https://ai-faq-chatbot-tpkc.onrender.com/](https://ai-faq-chatbot-tpkc.onrender.com/)
+
+## GitHub Repository
+
+[https://github.com/varshithreddyy6/AI_FAQ_Chatbot](https://github.com/varshithreddyy6/AI_FAQ_Chatbot)
+
 ## Author
 
 Varshith Reddy
-=======
-# AI_FAQ_Chatbot
-AI-powered FAQ chatbot using Node.js, Express, and Gemini API
->>>>>>> 37c1eb29930749bbe0a6106948ef11ff8234d385
