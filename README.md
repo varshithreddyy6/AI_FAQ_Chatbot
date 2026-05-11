@@ -32,7 +32,8 @@ npm start
 
 Open:
 http://localhost:3000
-
+Render Link:
+https://ai-faq-chatbot-tpkc.onrender.com/
 ## Author
 
 Varshith Reddy
