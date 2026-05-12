@@ -4,7 +4,7 @@ An advanced AI-powered chatbot built using HTML, CSS, JavaScript, Node.js, Expre
 
 ---
 
-## Features
+# Features
 
 - Modern ChatGPT-style UI
 - AI-generated responses
@@ -20,24 +20,24 @@ An advanced AI-powered chatbot built using HTML, CSS, JavaScript, Node.js, Expre
 
 ---
 
-## Tech Stack
+# Tech Stack
 
-### Frontend
+## Frontend
 - HTML
 - CSS
 - JavaScript
 
-### Backend
+## Backend
 - Node.js
 - Express.js
 
-### AI Integration
+## AI Integration
 - OpenRouter API
 - DeepSeek AI Model
 
 ---
 
-## Installation
+# Installation
 
 Clone the repository:
 
@@ -59,7 +59,7 @@ npm install
 
 ---
 
-## Environment Variables
+# Environment Variables
 
 Create a `.env` file in the root folder:
 
@@ -69,7 +69,7 @@ OPENROUTER_API_KEY=your_api_key_here
 
 ---
 
-## Run the Project
+# Run the Project
 
 ```bash
 node server.js
@@ -83,7 +83,19 @@ http://localhost:3000
 
 ---
 
-## Project Structure
+# Live Demo
+
+Website:
+
+https://ai-faq-chatbot-tpkc.onrender.com/
+
+Local Development:
+
+http://localhost:3000
+
+---
+
+# Project Structure
 
 ```text
 HorizonTechX_AI_FAQ_Chatbot
@@ -93,41 +105,34 @@ HorizonTechX_AI_FAQ_Chatbot
 ├── script.js
 ├── server.js
 ├── package.json
+├── package-lock.json
+├── .gitignore
 ├── .env
 └── README.md
 ```
 
 ---
 
-## Screenshots
-
-Add project screenshots here after deployment.
-
----
-
-## Future Improvements
+# Future Improvements
 
 - Voice input
 - Image upload
 - Streaming AI responses
 - PDF export
-- Online deployment
 - Authentication system
+- User login system
 
 ---
-## Live Demo
 
-Website:
-https://ai-faq-chatbot-tpkc.onrender.com/
-
-OR
-
-Open:
-http://localhost:3000/
----
-## Author
+# Author
 
 Varshith Reddy
 
 GitHub:
 https://github.com/varshithreddyy6
+
+---
+
+# Repository
+
+https://github.com/varshithreddyy6/HorizonTechX_AI_FAQ_Chatbot
