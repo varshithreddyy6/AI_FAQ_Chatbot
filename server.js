@@ -1,124 +1,97 @@
-require("dotenv").config();
-
 const express = require("express");
 const cors = require("cors");
-const fs = require("fs");
+const dotenv = require("dotenv");
 
-const {
-    GoogleGenerativeAI
-} = require("@google/generative-ai");
+dotenv.config();
 
 const app = express();
 
 app.use(cors());
+
 app.use(express.json());
+
 app.use(express.static(__dirname));
 
-// LOAD FAQ DATA
+/* OPENROUTER */
 
-const faqs = JSON.parse(
-    fs.readFileSync("faq.json", "utf-8")
-);
+const API_KEY =
+  process.env.OPENROUTER_API_KEY;
 
-// GEMINI API
+/* CHAT API */
 
-const genAI = new GoogleGenerativeAI(
-    process.env.GEMINI_API_KEY
-);
+app.post("/chat", async (req,res)=>{
 
-const model = genAI.getGenerativeModel({
-    model: "gemini-2.0-flash"
-});
+  try{
 
-// CHAT HISTORY
+    const userMessage =
+      req.body.message;
 
-let chatHistory = [];
+    const response =
+      await fetch(
+        "https://openrouter.ai/api/v1/chat/completions",
+        {
 
-// CHAT API
+          method:"POST",
 
-app.post("/chat", async (req, res) => {
+          headers:{
+            "Authorization":
+              `Bearer ${API_KEY}`,
 
-    const userMessage = req.body.message;
+            "Content-Type":
+              "application/json"
+          },
 
-    // SAVE USER MESSAGE
+          body:JSON.stringify({
 
-    chatHistory.push({
-        role: "user",
-        parts: [{ text: userMessage }]
+            model:
+              "deepseek/deepseek-chat-v3-0324:free",
+
+            messages:[
+              {
+                role:"user",
+                content:userMessage
+              }
+            ]
+
+          })
+
+        }
+      );
+
+    const data =
+      await response.json();
+
+    const reply =
+      data.choices?.[0]?.message?.content
+      ||
+      "No response.";
+
+    res.json({
+      reply
     });
 
-    // KEEP ONLY LAST 10 MESSAGES
+  }catch(error){
 
-    if (chatHistory.length > 10) {
-        chatHistory.shift();
-    }
+    console.log(error);
 
-    // FAQ SEARCH FIRST
+    res.json({
+      reply:
+        "Error getting response."
+    });
 
-    let foundAnswer = null;
+  }
 
-    for (let faq of faqs) {
-
-        if (
-            userMessage
-                .toLowerCase()
-                .includes(faq.question.toLowerCase())
-        ) {
-
-            foundAnswer = faq.answer;
-            break;
-        }
-    }
-
-    // IF FAQ FOUND
-
-    if (foundAnswer) {
-
-        return res.json({
-            reply: foundAnswer
-        });
-    }
-
-    // OTHERWISE GEMINI AI
-
-    try {
-
-        const chat = model.startChat({
-            history: chatHistory
-        });
-
-        const result = await chat.sendMessage(userMessage);
-
-        const response =
-            result.response.text();
-
-        // SAVE BOT RESPONSE
-
-        chatHistory.push({
-            role: "model",
-            parts: [{ text: response }]
-        });
-
-        res.json({
-            reply: response
-        });
-
-    } catch (error) {
-
-        console.log(error);
-
-        res.json({
-            reply:
-                "Gemini AI is temporarily busy. Please try again in a few seconds."
-        });
-    }
 });
 
-// START SERVER
+/* START SERVER */
 
-app.listen(3000, () => {
+const PORT =
+  process.env.PORT || 3000;
 
-    console.log(
-        "Server running on port 3000"
-    );
+app.listen(PORT, ()=>{
+
+  console.log(
+    `Server running on port ${PORT}`
+  );
+
 });

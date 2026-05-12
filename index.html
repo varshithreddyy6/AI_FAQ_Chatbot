@@ -3,120 +3,88 @@
 
 <head>
 
-    <meta charset="UTF-8" />
+  <meta charset="UTF-8" />
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
 
-    <title>AI FAQ Chatbot</title>
+  <title>AIFAQCHATBOT</title>
 
-    <link
-        rel="stylesheet"
-        href="style.css"
-    />
+  <link
+    rel="stylesheet"
+    href="style.css"
+  />
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
-        rel="stylesheet"
-    />
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
 </head>
 
 <body>
 
-    <div class="app">
+  <div class="app">
 
-        <!-- SIDEBAR -->
+    <!-- SIDEBAR -->
 
-        <div class="sidebar">
+    <div class="sidebar">
 
-            <div class="logo">
-                AI FAQ Chatbot
-            </div>
+      <h2>
+        AIFAQ CHATBOT
+      </h2>
 
-            <div class="menu">
+      <button id="newChatBtn">
+        + New Chat
+      </button>
 
-                <div class="menu-item">
-                    New Chat
-                </div>
-
-                <div class="menu-item">
-                    AI Assistant
-                </div>
-
-                <div class="menu-item">
-                    FAQ Support
-                </div>
-
-                <div
-                    class="menu-item"
-                    onclick="clearChat()"
-                >
-                    Clear Chat
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- MAIN -->
-
-        <div class="main">
-
-            <div class="topbar">
-                AI FAQ Chatbot
-            </div>
-
-            <!-- CHAT BOX -->
-
-            <div id="chat-box">
-
-                <div class="bot-message">
-
-                    <div>
-                        Hello 👋
-                        <br><br>
-
-                        I am your AI FAQ Chatbot.
-                        <br>
-
-                        Ask me anything about AI,
-                        Machine Learning,
-                        internships,
-                        or technology.
-                    </div>
-
-                    <div class="time">
-                        Online
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- INPUT -->
-
-            <div class="input-area">
-
-                <input
-                    type="text"
-                    id="user-input"
-                    placeholder="Ask anything..."
-                />
-
-                <button onclick="sendMessage()">
-                    Send
-                </button>
-
-            </div>
-
-        </div>
+      <div id="historyList"></div>
 
     </div>
 
-    <script src="script.js"></script>
+    <!-- MAIN -->
+
+    <div class="main">
+
+      <!-- TOPBAR -->
+
+      <div class="topbar">
+        AI Assistant
+      </div>
+
+      <!-- CHAT -->
+
+      <div
+        class="chat-container"
+        id="chatContainer"
+      ></div>
+
+      <!-- INPUT -->
+
+      <div class="input-area">
+
+        <div class="input-wrapper">
+
+          <textarea
+            id="userInput"
+            placeholder="Message AI Assistant..."
+          ></textarea>
+
+          <button
+            id="sendBtn"
+            class="send-btn"
+          >
+            ➤
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
 
 </body>
 
