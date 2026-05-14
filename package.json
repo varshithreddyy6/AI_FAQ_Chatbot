@@ -1,19 +1,17 @@
 {
-  "name": "ai_faq_chatbot",
-  "version": "1.0.0",
-  "description": "AI FAQ Chatbot using Node.js and Gemini API",
+  "name": "neurabot_ai_faq_chatbot",
+  "version": "2.0.0",
+  "description": "Professional AI FAQ Chatbot — HorizonTechX Internship by Varshith Reddy",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "node server.js"
   },
   "author": "Varshith Reddy",
   "license": "ISC",
   "dependencies": {
-    "@google/generative-ai": "^0.24.1",
-    "axios": "^1.16.0",
     "cors": "^2.8.6",
     "dotenv": "^16.6.1",
-    "express": "^4.22.2",
-    "marked": "^18.0.3"
+    "express": "^4.22.2"
   }
 }
